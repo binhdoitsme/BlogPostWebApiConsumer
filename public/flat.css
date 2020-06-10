@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', 'Consolas', 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+body {
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    /**/
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 1px solid black;
+}
+
+button, .comment-label {
+    transition: .5s all ease;
+}
+
+button:hover:enabled, .comment-label:hover {
+    background-color: black;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.window-decorator-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.window-decorator-container > .lbl {
+    padding: 0 2rem;
+    color: white
+}
+
+.window-decorator-container > .window-btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-decorator-container > .window-btn-group > button {
+    width: 2rem;
+    margin: 0;
+}
+
+.container {
+    max-width: 850px;
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.post-create {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: flex-end;
+}
+
+.post-create > input {
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: 0.25rem .5rem;
+}
+
+.post-create > textarea {
+    height: 7rem;
+    width: 100%;
+    resize: none;
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+.post-create > button {
+    width: 5rem;
+}
+
+.post-container {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.author-portion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-portion > div {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid black;
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content-portion {
+    margin: 1rem 0;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.comment-portion {
+    margin: 2rem 0 1rem 0;
+}
+
+.comment-label, .comment-container {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.comment-container {
+    padding: 0 1.8rem;
+}
+
+.comment-author {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.comment-label {
+    background: rgba(0, 0, 0, 0.05);
+    user-select: none;
+    padding-left: .5rem;
+}
+
+.comment-label > span {
+    padding-left: .6rem;
+}
+
+.comment-container > *, .post-title, .post-content {
+    margin: 0.5rem 0;
+}
+
+.add-comment {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-comment > input {
+    padding: 0 0.5rem;
+}
+
+.comment-input {
+    width: 100%;
+    margin-right: .5rem;
+}
